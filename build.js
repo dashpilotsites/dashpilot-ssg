@@ -3,8 +3,8 @@ var handlebars = require("handlebars");
 var showdown = require("showdown");
 const converter = new showdown.Converter();
 const matter = require('gray-matter');
-const sharp = require('sharp');
-const config = require('./config');
+//const sharp = require('sharp');
+//const config = require('./config');
 
 console.log("starting build...");
 
@@ -59,6 +59,7 @@ function compile(mydata, src, dest) {
     fs.writeFileSync("./public/" + dest, pageText, "utf8");
 }
 
+/*
 // resize images
 var imageFolder = "./src/uploads/";
 var imgs = fs.readdirSync(imageFolder);
@@ -69,5 +70,6 @@ imgs.forEach(function(img){
       .resize(config.img_width)
       .toFile('public/uploads/'+img, (err, info) => {});
 });
+*/
   
 console.log("build finished.");
