@@ -1,0 +1,21 @@
+---
+label: Post
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: subtitle
+  label: subtitle
+- name: category
+  type: text
+  config:
+    required: false
+  label: category
+- name: gallery
+  type: image_gallery
+  config: {}
+  label: gallery
+pages:
+- src/posts/a-second-post.md
