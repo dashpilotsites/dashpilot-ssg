@@ -1,6 +1,6 @@
 ---
-title: This is an update from dashpilotsites!
-subtitle: This is an update of the subtitle
+title: Dashpilotsites thingie
+subtitle: Hello there
 category: blog
 gallery:
 - "/uploads/keo57004.png"
