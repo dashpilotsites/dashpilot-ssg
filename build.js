@@ -5,15 +5,9 @@ const converter = new showdown.Converter();
 const matter = require('gray-matter');
 //const sharp = require('sharp');
 //const config = require('./config');
-const makeDir = require('make-dir');
+
 
 console.log("starting build...");
-
- 
-(async () => {
-    const path = await makeDir('public');
- 
-    console.log(path);
 
 handlebars.registerHelper("ifEq", function(v1, v2, options) {
     if (v1 === v2) {
@@ -78,7 +72,5 @@ imgs.forEach(function(img){
       .toFile('public/uploads/'+img, (err, info) => {});
 });
 */
-    
-})();
   
 console.log("build finished.");
