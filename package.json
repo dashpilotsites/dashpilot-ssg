@@ -9,7 +9,7 @@
     "scripts": {
         "build": "node build.js",
         "dev": "dev-refresh src --serve public --cmd 'npm run build'",
-        "develop": "node build.js"
+        "develop": "npm run build"
     },
     "repository": {
         "type": "git",
