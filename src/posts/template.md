@@ -1,5 +1,5 @@
 ---
-title: Let's see if vercel works again
+title: This is an update from dashpilotsites
 subtitle: This is an update of the subtitle
 category: blog
 gallery:
