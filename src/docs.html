@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{page}} | Dashpilot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="stylesheet" href="https://use.typekit.net/din4hwr.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/docs.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlightjs-themes@1.0.0/github.css">
+</head>
+
+<body>
+    <header>
+        <div class="row no-gutters">
+            <div class="col-3">
+                <a href="../"> <img src="https://www.dashpilot.com/assets/img/rocketlogo.png" id="logo" /> </a> <a href="/" id="title"> DashPilot</a> </div>
+            <div class="col-9 text-right" id="nav"> <a href="/"> Home</a> <a href="docs"> Docs</a> <a href="blog"> Blog</a> </div>
+        </div>
+        </div>
+    </header>
+    <div id="main">
+        <div class="text-center">
+            <h1>Docs</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-3 index">
+                <section id="sidenav">
+                    <p>{{#each entries}}<a href="#{{ this.id }}">{{this.title}}</a>{{/each}}</p>
+                </section>
+            </div>
+            <div class="col-md-9">{{#each entries}}{{#ifEq this.category 'docs'}}
+                <section id="{{ this.id }}">
+                    <div class="content">
+                        <h1>{{this.title}}</h1>
+                        <div class="body">{{{ this.body }}}</div>
+                    </div>
+                </section>
+                {{/ifEq}} {{/each}}
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+    <script src="assets/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+{
+    "name": "dashpilot-website",
+    "version": "1.0.0",
+    "description": "Website for Dashpilot.com",
+    "main": "build.js",
+    "directories": {
+        "doc": "docs"
+    },
+    "scripts": {
+        "build": "node build.js",
+        "dev": "dev-refresh src --serve public --cmd 'npm run build'",
+        "develop": "node build.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dashpilot/dashpilot-website.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/dashpilot/dashpilot-website/issues"
+    },
+    "homepage": "https://github.com/dashpilot/dashpilot-website#readme",
+    "dependencies": {
+        "fs": "0.0.1-security",
+        "handlebars": "^4.7.6",
+        "showdown": "^1.9.1",
+        "gray-matter": "^4.0.2",
+        "sharp": "^0.26.1"
+    },
+    "devDependencies": {
+        "dev-refresh": "^1.2.1",
+        "watch": "^1.0.2"
+    }
+}
