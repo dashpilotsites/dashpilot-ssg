@@ -8,7 +8,7 @@
     },
     "scripts": {
         "build": "node build.js",
-        "dev": "dev-refresh src --serve public --port 8080 --cmd 'npm run build'",
+        "dev": "dev-refresh src --serve public --host 0.0.0.0 --port 8080 --cmd 'npm run build'",
         "develop": "npm run dev"
     },
     "repository": {
